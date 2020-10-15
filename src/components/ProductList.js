@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import Product from "./Product";
-import Title from "./Title";
 import { storeProducts } from "../data";
 import styled from "styled-components";
 import { ProductConsumer } from "../context";
 
 
 
-function ProductList(){
+function ProductList(props){
     const [products] = useState(storeProducts);
     return (
         <React.Fragment>
             <ProductWrapper className="py-5">
                 <div className="container">
-                    <Title name="best" title="sellers" />
                     <div className="row">
                         <ProductConsumer>
                             {value => {
                                 return value.products.map(product => {
+                                  if( "/" + product.type == props.match.path){
                                     return <Product key={product.id} product={product} />;
+                                  }
                                 });
                             }}
                         </ProductConsumer>

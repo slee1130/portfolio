@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,12 +11,14 @@ export default class CartItem extends Component {
     return (
       <div className="row my-1 text-capitalize text-center">
         <div className="col-10 mx-auto col-lg-2">
+          <Link to="/details">
           <img
             src={img}
             style={{ width: "5rem", heigth: "5rem" }}
             className="img-fluid"
             alt=""
           />
+          </Link>
         </div>
         <div className="col-10 mx-auto col-lg-2 ">
           <span className="d-lg-none">product :</span> {title}

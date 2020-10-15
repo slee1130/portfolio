@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import CartItem from "./CartItem";
 
 
-
 export default class CartList extends Component {
   render() {
     const { value } = this.props;
@@ -12,6 +11,7 @@ export default class CartList extends Component {
         {cart.map(item => (
           <CartItem key={item.id} item={item} value={value} />
         ))}
+
       </div>
     );
   }

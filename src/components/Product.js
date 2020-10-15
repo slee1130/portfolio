@@ -89,9 +89,9 @@ const ProductWrapper = styled.div`
     bottom: 0;
     right: 0;
     padding: 0.2rem 0.4rem;
-    background: var(--lightDrk);
+    background: var(--mainWhite);
     border: none;
-    color: var(--mainWhite);
+    color: var(--lightDark);
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);

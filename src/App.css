@@ -1,6 +1,7 @@
 :root {
   --mainBlue: #2a2a72;
   --mainWhite: #f3f3f3;
+  --realWhite: #ffffff;
   --mainDark: #232528;
   --lightDark:#696969;
   --mainYellow: #ffa400;
@@ -25,6 +26,7 @@ body {
 }
 .navbar {
   justify-content: flex-start !important;
+  background: var(--mainWhite) !important;
 }
 .btn-black {
   background: transparent;
